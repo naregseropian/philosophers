@@ -1,5 +1,5 @@
 NAME	:= philo
-CC	:= cc -Wall -Wextra -Werror -g #-fsanitize=thread
+CC	:= cc -Wall -Wextra -Werror #-g #-fsanitize=thread
 SRCS	:= main.c error_handling.c check_args.c init.c actions.c routine.c utils.c end_simulation.c
 
 OBJS	:= $(SRCS:.c=.o)

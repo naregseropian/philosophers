@@ -6,7 +6,7 @@
 /*   By: nseropia <nseropia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 20:22:05 by nseropia          #+#    #+#             */
-/*   Updated: 2023/09/26 18:07:33 by nseropia         ###   ########.fr       */
+/*   Updated: 2023/09/27 12:44:56 by nseropia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,43 +46,3 @@ void	ft_eat(t_philo *philo)
 	pthread_mutex_unlock(&philo->sim->forks_lock[philo->r_fork]);
 	pthread_mutex_unlock(&philo->sim->forks_lock[philo->l_fork]);
 }
-
-
-// void	ft_eat(t_philo *philo)
-// {
-// 	if (philo->l_fork < philo->r_fork) 
-//     {
-//         pthread_mutex_lock(&philo->sim->forks_lock[philo->l_fork]);
-//         log_status(philo, (t_act) FORK);
-//         pthread_mutex_lock(&philo->sim->forks_lock[philo->r_fork]);
-//     } 
-//     else 
-//     {
-//         pthread_mutex_lock(&philo->sim->forks_lock[philo->r_fork]);
-//         log_status(philo, (t_act) FORK);
-//         pthread_mutex_lock(&philo->sim->forks_lock[philo->l_fork]);
-//     }
-//     log_status(philo, (t_act) FORK);
-
-//     philo->is_eating = 1;
-//     log_status(philo, (t_act) EAT);
-
-//     pthread_mutex_lock(&philo->meal_time_lock);
-//     philo->last_meal_time = get_time(); 
-//     philo->no_of_meals_eaten++;
-//     pthread_mutex_unlock(&philo->meal_time_lock);
-
-//     ft_usleep(philo->sim->time_to_eat);
-//     philo->is_eating = 0;
-
-//     if (philo->l_fork < philo->r_fork) 
-//     {
-//         pthread_mutex_unlock(&philo->sim->forks_lock[philo->r_fork]);
-//         pthread_mutex_unlock(&philo->sim->forks_lock[philo->l_fork]);
-//     } 
-//     else 
-//     {
-//         pthread_mutex_unlock(&philo->sim->forks_lock[philo->l_fork]);
-//         pthread_mutex_unlock(&philo->sim->forks_lock[philo->r_fork]);
-//     }
-// }

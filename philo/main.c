@@ -6,14 +6,12 @@
 /*   By: nseropia <nseropia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 17:35:11 by nseropia          #+#    #+#             */
-/*   Updated: 2023/09/26 16:20:14 by nseropia         ###   ########.fr       */
+/*   Updated: 2023/09/27 12:39:04 by nseropia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-/* here we are creating the thread, the philos which run with algorithm routine
-*/
 void	launch_threads(t_sim *sim)
 {
 	int	i;

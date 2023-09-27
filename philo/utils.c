@@ -6,7 +6,7 @@
 /*   By: nseropia <nseropia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/09 13:40:47 by nseropia          #+#    #+#             */
-/*   Updated: 2023/09/26 15:49:39 by nseropia         ###   ########.fr       */
+/*   Updated: 2023/09/27 12:39:17 by nseropia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@ long long	get_time(void)
 	return (tv.tv_sec * 1000 + tv.tv_usec / 1000);
 }
 
-/* need to know what this does exactly */
 int	ft_usleep(size_t ms)
 {
 	size_t	start;
